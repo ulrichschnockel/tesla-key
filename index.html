@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beratung für Prozesse rund um physische Werte</title>
+  <meta name="description" content="Beratung für Logistik-, Bestands-, Abwicklungs- und Steuerungsprozesse rund um physische Werte – mit Schwerpunkt Edelmetalle, Sorten und bargeldnahe Prozessketten." />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-soft: #111827;
+      --card: #ffffff;
+      --text: #111827;
+      --text-light: #475569;
+      --line: #e5e7eb;
+      --accent: #8b7355;
+      --accent-dark: #6f5a42;
+      --white: #ffffff;
+      --max: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      background: var(--bg);
+      color: var(--white);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .nav {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .hero {
+      background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+      color: var(--white);
+      padding: 88px 20px 72px;
+    }
+
+    .hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.3fr 0.9fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .eyebrow {
+      color: #cbd5e1;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      line-height: 1.12;
+      margin: 0 0 18px;
+    }
+
+    .hero p {
+      color: #e2e8f0;
+      font-size: 1.06rem;
+      max-width: 760px;
+      margin: 0 0 22px;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 18px;
+      padding: 24px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.05rem;
+    }
+
+    .hero-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: #e5e7eb;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--white);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,0.25);
+      color: var(--white);
+    }
+
+    main section {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 72px 20px;
+    }
+
+    h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+      line-height: 1.2;
+      margin: 0 0 14px;
+    }
+
+    .section-intro {
+      max-width: 780px;
+      color: var(--text-light);
+      margin-bottom: 28px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--text-light);
+    }
+
+    .split {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+    }
+
+    .list-clean {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .contact-wrap {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 24px;
+    }
+
+    .contact-box, form {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    form label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      margin-bottom: 16px;
+      font: inherit;
+      background: #fff;
+    }
+
+    form textarea {
+      min-height: 150px;
+      resize: vertical;
+    }
+
+    .small {
+      font-size: 0.92rem;
+      color: var(--text-light);
+    }
+
+    .impressum {
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+    }
+
+    footer {
+      background: var(--bg);
+      color: #cbd5e1;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 22px 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .footer-inner a {
+      color: #e5e7eb;
+      text-decoration: none;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .grid-3,
+      .split,
+      .contact-wrap {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav">
+      <div class="brand">[Ihr Name / Ihre Marke]</div>
+      <nav class="nav-links">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#profil">Profil</a>
+        <a href="#kontakt">Kontakt</a>
+        <a href="#impressum">Impressum</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">Externe Beratung</div>
+        <h1>Prozesse rund um physische Werte klarer, stabiler und steuerbarer machen</h1>
+        <p>
+          Beratung für Logistik-, Bestands-, Abwicklungs- und Steuerungsprozesse rund um physische Werte –
+          mit Schwerpunkt auf Edelmetallen, Sorten, Bargeldlogistik und angrenzenden werthaltigen Prozessketten.
+        </p>
+        <p>
+          Nicht allgemeine Strategieberatung, sondern umsetzungsnahe Unterstützung in einem sensiblen Umfeld,
+          in dem physischer Materialfluss, Bestand, Dokumentation, Kontrolle und Systemabbildung sauber zusammenpassen müssen.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
+          <a class="btn btn-secondary" href="#leistungen">Leistungsbild ansehen</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h3>Typische Einsatzfelder</h3>
+        <ul>
+          <li>Edelmetallprozesse in Handel, Verwahrung, Bestand und Abwicklung</li>
+          <li>Banknotenprozesse mit logistischer und systemischer Sicht</li>
+          <li>Processing-nahe Prozessketten im Cashcenter- und Wertlogistik-Umfeld</li>
+          <li>Übergänge zwischen Fachbereich, Kontrolle, Logistik und Systemen</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <main>
+    <section id="leistungen">
+      <h2>Leistungen</h2>
+      <p class="section-intro">
+        Fokus auf werthaltige Prozessketten, in denen physischer Materialfluss, Eigentum, Bestand,
+        Dokumentation und Systemabbildung zusammen gedacht werden müssen – vom Edelmetallgeschäft über Banknoten bis zu Processing-nahen Abläufen im Cashcenter-Kontext.
+      </p>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Edelmetalle</h3>
+          <p>
+            Analyse und Strukturierung von Prozessketten in Ankauf, Handel, Verwahrung, Logistik,
+            Bestandsführung und angrenzenden Backoffice-Abläufen.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Banknoten</h3>
+          <p>
+            Betrachtung logistischer, dispositiver und systemischer Abläufe rund um Banknoten –
+            von Beständen und Versorgung bis zur operativen Abwicklung und Dokumentation.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Cashcenter \(Processing\)</h3>
+          <p>
+            Unterstützung bei Processing-nahen Abläufen im Cashcenter-Umfeld, insbesondere dort,
+            wo Verantwortung, Bestandslogik, Kontrolle und operative Umsetzung sauber verzahnt werden müssen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="profil">
+      <div class="split">
+        <div>
+          <h2>Profil</h2>
+          <p class="section-intro">
+            Langjährige Erfahrung in werthaltigen Prozessumfeldern mit Blick nicht nur auf einzelne Prozessschritte,
+            sondern auf das Zusammenspiel von Logistik, Bestand, Abwicklung, Bewertung, Dokumentation und Steuerung.
+          </p>
+          <p>
+            Mein Schwerpunkt liegt dort, wo operative Realität und systemische Abbildung auseinanderlaufen: an den Übergängen zwischen Fachbereichen, Handel, physischer Abwicklung, Kontrolle, Cashcenter-Prozessen und IT.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Wofür ich stehe</h3>
+          <ul class="list-clean">
+            <li>Umsetzungsnähe statt Folienproduktion</li>
+            <li>Verständnis für werthaltige Bestände, sensible Prozesse und banknahe Logik</li>
+            <li>Saubere Trennung von physischer und buchmäßiger Logik</li>
+            <li>Klarheit bei Verantwortlichkeiten, Schnittstellen und Kontrollen</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p class="section-intro">
+        Für eine erste Einordnung Ihres Anliegens reicht eine kurze Nachricht. Ich melde mich zeitnah zurück.
+      </p>
+
+      <div class="contact-wrap">
+        <div class="contact-box">
+          <h3>Anfrage per E-Mail</h3>
+          <p>
+            Für eine erste Kontaktaufnahme genügt eine kurze Nachricht mit Ihrem Namen, Unternehmen,
+            Ihren Kontaktdaten und einer kurzen Beschreibung Ihres Anliegens.
+          </p>
+          <p>
+            <a class="btn btn-primary" href="mailto:consulting@schnoeckel.de?subject=Anfrage%20%C3%BCber%20Ihre%20Website&body=Name:%0AFirma:%0AE-Mail:%0ATelefon:%0A%0AAnliegen:%0A">
+              E-Mail erstellen
+            </a>
+          </p>
+          <p class="small">
+            Beim Klick öffnet sich Ihr Standard-E-Mail-Programm mit vorausgefülltem Empfänger,
+            Betreff und einer kurzen Vorlage für die Anfrage.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="impressum" class="impressum">
+    <div style="max-width: 1080px; margin: 0 auto; padding: 72px 20px;">
+      <h2>Impressum</h2>
+      <p><strong>Angaben gemäß § 5 DDG</strong></p>
+      <p>
+        [Vorname Nachname]<br />
+        [Straße Hausnummer]<br />
+        [PLZ Ort]<br />
+        Deutschland
+      </p>
+
+      <p>
+        <strong>Kontakt</strong><br />
+        Telefon: [Ihre Telefonnummer]<br />
+        E-Mail: <a href="mailto:consulting@schnoeckel.de">consulting@schnoeckel.de</a>
+      </p>
+
+      <p>
+        <strong>Berufsbezeichnung / Tätigkeit</strong><br />
+        Externe Beratung für Prozesse rund um physische Werte
+      </p>
+
+      <p>
+        <strong>Umsatzsteuer</strong><br />
+        [Falls vorhanden: Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: DE...]
+      </p>
+
+      <p>
+        <strong>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</strong><br />
+        [Vorname Nachname, Anschrift wie oben]
+      </p>
+
+      <p class="small">
+        Bitte prüfen Sie die Pflichtangaben Ihres Impressums im konkreten Einzelfall, insbesondere dann,
+        wenn Sie bereits gewerblich auftreten, eine Umsatzsteuer-ID haben, in ein Register eingetragen sind
+        oder zusätzliche regulatorische Angaben erforderlich sind.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 [Ihr Name / Ihre Marke]</div>
+      <div>
+        <a href="#kontakt">Kontakt</a> · <a href="#impressum">Impressum</a>
+      </div>
+    </div>
+  </footer></body>
+</html>
