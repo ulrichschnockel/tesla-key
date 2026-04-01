@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Beratung für Prozesse rund um physische Werte</title>
-  <meta name="description" content="Beratung für Logistik-, Bestands-, Abwicklungs- und Steuerungsprozesse rund um physische Werte – mit Schwerpunkt Edelmetalle, Sorten und bargeldnahe Prozessketten." />
+  <meta name="description" content="Beratung für Logistik-, Bestands-, Abwicklungs- und Steuerungsprozesse rund um physische Werte – mit Schwerpunkt Edelmetalle, Banknoten und Cashcenter." />
   <style>
     :root {
       --bg: #0f172a;
@@ -173,6 +173,7 @@
       margin-bottom: 28px;
     }
 
+    #leistungen .section-intro,
     #aufgaben .section-intro,
     #profil .section-intro {
       max-width: 100%;
@@ -265,39 +266,17 @@
 
     .contact-wrap {
       display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
+      grid-template-columns: 1fr;
       gap: 24px;
+      max-width: 760px;
     }
 
-    .contact-box, form {
+    .contact-box {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 24px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
-    }
-
-    form label {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 6px;
-      font-size: 0.95rem;
-    }
-
-    form input,
-    form textarea {
-      width: 100%;
-      padding: 12px 14px;
-      border: 1px solid #cbd5e1;
-      border-radius: 10px;
-      margin-bottom: 16px;
-      font: inherit;
-      background: #fff;
-    }
-
-    form textarea {
-      min-height: 150px;
-      resize: vertical;
     }
 
     .small {
@@ -355,6 +334,7 @@
       <div class="brand">Ulrich Schnöckel</div>
       <nav class="nav-links">
         <a href="#leistungen">Leistungen</a>
+        <a href="#aufgaben">Aufgabenstellungen</a>
         <a href="#profil">Profil</a>
         <a href="#kontakt">Kontakt</a>
         <a href="#impressum">Impressum</a>
@@ -366,14 +346,14 @@
     <div class="hero-inner">
       <div>
         <div class="eyebrow">Beratung für operative Wertelogistik</div>
-        <h1>Prozesse rund um physische Werte klarer, stabiler und steuerbarer machen</h1>
+        <h1>Wertlogistische Prozesse stabil, transparent und steuerbar machen</h1>
         <p>
           Ich unterstütze Banken und Unternehmen bei der Analyse, Stabilisierung und Weiterentwicklung wertlogistischer Prozessketten –
           mit Fokus auf Edelmetalle, Banknoten, Cashcenter-Abläufe sowie die Schnittstellen zu Handel, E-Commerce,
           physischer Bearbeitung, Verwahrung, Versand und IT.
         </p>
         <p>
-          Im Mittelpunkt stehen belastbare End-to-End-Prozesse, die nicht nur operativ funktionieren, sondern auch Transparenz, Steuerbarkeit und belastbare Entscheidungsgrundlagen für Fachbereiche und Management schaffen. Ziel ist es, operative Realität, Systemabbildung und Management-Sicht so zusammenzuführen, dass Risiken, Engpässe und Steuerungsdefizite frühzeitig sichtbar und beherrschbar werden.
+          Im Mittelpunkt stehen belastbare End-to-End-Prozesse, die nicht nur operativ funktionieren, sondern auch Transparenz, Steuerbarkeit und belastbare Entscheidungsgrundlagen für Fachbereiche und Management schaffen. Ziel ist es, operative Realität, Systemabbildung und Management-Sicht so zusammenzuführen, dass Risiken, Engpässe und Steuerungsdefizite frühzeitig sichtbar, bewertbar und steuerbar werden.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#kontakt">Kontakt aufnehmen</a>
@@ -396,43 +376,34 @@
     <section id="leistungen">
       <h2>Leistungen</h2>
       <p class="section-intro">
-        Fokus auf Prozessketten, in denen physischer Materialfluss, Bestandslogik, Prüfung,
-        operative Bearbeitung, Dokumentation und systemische Abbildung konsistent zusammengeführt werden müssen.
-        Gerade im werthaltigen Umfeld entstehen Reibungsverluste selten in Einzelschritten, sondern an Übergängen,
-        Verantwortlichkeiten und nicht sauber abgebildeten Bearbeitungslogiken.
+        Fokus auf Prozessketten, in denen physischer Materialfluss, Bestandslogik, Prüfung, operative Bearbeitung, Dokumentation und Systemabbildung konsistent zusammenspielen müssen. Gerade im werthaltigen Umfeld entstehen Reibungsverluste selten im Einzelschritt, sondern an Übergängen, Verantwortlichkeiten und nicht sauber abgebildeten Bearbeitungslogiken.
       </p>
       <div class="grid-3">
         <div class="card">
           <img class="card-image" src="AdobeStock_55627450.jpeg" alt="Gold- und Silbermünzen" />
           <div class="card-body">
-          <h3>Edelmetalle</h3>
-          <p>
-            Strukturierung und Optimierung von Prozessketten rund um Barren, Münzen sowie Schmelzware –
-            von Ankauf und Prüfung über Verwahrung, Bestandsführung und Logistik bis zur systemischen Abbildung
-            der Bearbeitungsschritte und angrenzender Handels- und Versandprozesse.
-          </p>
+            <h3>Edelmetalle</h3>
+            <p>
+              Strukturierung und Optimierung von Prozessketten rund um Barren, Münzen und Schmelzware – von Ankauf und Prüfung über Verwahrung, Bestandsführung und Logistik bis zur systemischen Abbildung der Bearbeitungsschritte sowie der angrenzenden Handels- und Versandprozesse.
+            </p>
           </div>
         </div>
         <div class="card">
           <img class="card-image" src="AdobeStock_278552244.jpeg" alt="Internationale Banknoten" />
           <div class="card-body">
-          <h3>Banknoten</h3>
-          <p>
-            Analyse und Weiterentwicklung banknotenbezogener Abläufe in Bestandsführung, Disposition,
-            Bearbeitung, Dokumentation und logistischer Steuerung – insbesondere dort, wo operative Realität,
-            Kontrollanforderungen und Systemunterstützung sauber zusammengeführt werden müssen.
-          </p>
+            <h3>Banknoten</h3>
+            <p>
+              Analyse und Weiterentwicklung banknotenbezogener Abläufe in Bestandsführung, Disposition, Bearbeitung, Dokumentation und logistischer Steuerung – insbesondere dort, wo operative Realität, Kontrollanforderungen und Systemunterstützung konsistent zusammengeführt werden müssen.
+            </p>
           </div>
         </div>
         <div class="card">
           <img class="card-image" src="AdobeStock_516449268.jpeg" alt="Cashcenter mit Geldzählmaschine und Banknotenbearbeitung" />
           <div class="card-body">
-          <h3>Cashcenter</h3>
-          <p>
-            Unterstützung bei operativen Abläufen im Cashcenter-Umfeld mit Blick auf Bearbeitung,
-            Bestandslogik, Versandsteuerung, Übergabepunkte, Kontrollen und Kapazitäten – insbesondere in Prozessen,
-            die unter Volumen-, Takt- oder Peak-Anforderungen stabil funktionieren müssen.
-          </p>
+            <h3>Cashcenter</h3>
+            <p>
+              Unterstützung bei operativen Abläufen im Cashcenter-Umfeld mit Blick auf Bearbeitung, Bestandslogik, Versandsteuerung, Übergabepunkte, Kontrollen und Kapazitäten – insbesondere in Prozessen, die auch unter Volumen-, Takt- oder Peak-Anforderungen stabil funktionieren müssen.
+            </p>
           </div>
         </div>
       </div>
@@ -442,35 +413,25 @@
       <div class="section-panel">
         <h2>Typische Aufgabenstellungen</h2>
         <p class="section-intro">
-          Unterstützung dort, wo wertlogistische Prozesse an Volumen, Schnittstellen, Verantwortlichkeiten oder fehlender Transparenz an Reibung verlieren –
-          und wo operative Steuerung, Systemabbildung und tatsächlicher Ablauf wieder so zusammengeführt werden müssen, dass Stabilität,
-          Verlässlichkeit und Management-Transparenz entstehen.
+          Unterstützung dort, wo wertlogistische Prozesse unter Volumen, an Schnittstellen, in Verantwortlichkeiten oder aufgrund fehlender Transparenz an Stabilität verlieren – und wo operative Steuerung, Systemabbildung und tatsächlicher Ablauf wieder zu einem belastbaren Gesamtprozess zusammengeführt werden müssen.
         </p>
         <div class="tasks-grid">
           <div class="text-card">
             <h3>Prozessaufnahme und Transparenzgewinn</h3>
             <p>
-              Analyse der tatsächlichen Abläufe entlang von Ankauf, Prüfung, Bearbeitung, Lager, Versand und Fulfillment –
-              mit dem Ziel, operative Realität, Durchlaufzeiten, Engpässe und kritische Übergabepunkte transparent zu machen
-              und für Fachbereiche wie Management belastbar einzuordnen.
+              Analyse der tatsächlichen Abläufe entlang von Ankauf, Prüfung, Bearbeitung, Lager, Versand und Fulfillment – mit dem Ziel, operative Realität, Durchlaufzeiten, Engpässe und kritische Übergabepunkte sichtbar zu machen und für Fachbereiche wie Management belastbar einzuordnen.
             </p>
-          <p>
-            Ich biete keine eigene Softwareplattform und kein Standardprodukt an, sondern beraterische Unterstützung mit Blick auf reale Abläufe, Schnittstellen, Verantwortlichkeiten und die tragfähige Abbildung in bestehenden Systemlandschaften.
-          </p>
-        </div>
-        <div class="text-card">
+          </div>
+          <div class="text-card">
             <h3>Operative Stabilisierung und gezielte Entlastung</h3>
             <p>
-              Identifikation wirksamer Maßnahmen im laufenden Betrieb, um Engpässe, Medienbrüche, unnötige Schleifen und
-              vermeidbare Reibungsverluste zu reduzieren – mit Fokus auf stabile Abläufe, klare Verantwortlichkeiten und
-              höhere Prozesssicherheit.
+              Identifikation wirksamer Maßnahmen im laufenden Betrieb, um Engpässe, Medienbrüche, unnötige Schleifen und vermeidbare Reibungsverluste zu reduzieren – mit Fokus auf stabile Abläufe, klare Verantwortlichkeiten und höhere Prozesssicherheit.
             </p>
           </div>
           <div class="text-card">
             <h3>Steuerungs- und Kapazitätslogik</h3>
             <p>
-              Aufbau tragfähiger KPI-, Kapazitäts- und Steuerungslogiken für Volumensteuerung, Priorisierung, Lastspitzen
-              und belastbare operative Entscheidungen – als Grundlage für bessere Planbarkeit und eine fundierte Management-Steuerung.
+              Aufbau tragfähiger KPI-, Kapazitäts- und Steuerungslogiken für Volumensteuerung, Priorisierung, Lastspitzen und belastbare operative Entscheidungen – als Grundlage für bessere Planbarkeit und eine fundierte Management-Steuerung.
             </p>
           </div>
         </div>
@@ -479,40 +440,39 @@
 
     <section id="profil">
       <div class="section-panel">
-      <div class="split">
-        <div>
-          <h2>Profil</h2>
-          <p class="section-intro">
-            Langjährige Erfahrung in werthaltigen Prozessumfeldern mit Blick auf das Zusammenspiel von Handel,
-            E-Commerce, Logistik, Bestand, Kontrolle, Versand und systemischer Abbildung.
-          </p>
-          <p>
-            Mein Schwerpunkt liegt dort, wo operative Realität und Systemlogik auseinanderlaufen: an den Übergängen zwischen
-            Fachbereichen, Handel, E-Commerce, physischer Bearbeitung, Wertlager, Versand, Cashcenter-Abläufen und IT.
-            Genau an diesen Schnittstellen entstehen in der Praxis die entscheidenden Risiken, Verzögerungen und Intransparenzen – und damit auch die Punkte, an denen Management-Steuerung häufig ins Leere läuft.
-          </p>
+        <div class="split">
+          <div>
+            <h2>Profil</h2>
+            <p class="section-intro">
+              Langjährige Erfahrung in werthaltigen Prozessumfeldern mit Blick auf das Zusammenspiel von Handel, E-Commerce, Logistik, Bestand, Kontrolle, Versand und Systemabbildung.
+            </p>
+            <p>
+              Mein Schwerpunkt liegt dort, wo operative Realität und Systemlogik auseinanderlaufen: an den Übergängen zwischen Fachbereichen, Handel, E-Commerce, physischer Bearbeitung, Wertlager, Versand, Cashcenter-Abläufen und IT. Genau an diesen Schnittstellen entstehen in der Praxis die entscheidenden Risiken, Verzögerungen und Intransparenzen – und damit auch die Punkte, an denen Management-Steuerung ohne belastbare Prozesssicht häufig ins Leere läuft.
+            </p>
+            <p>
+              Ich biete keine eigene Softwareplattform und kein Standardprodukt an, sondern beraterische Unterstützung mit Blick auf reale Abläufe, Schnittstellen, Verantwortlichkeiten und die tragfähige Abbildung in bestehenden Systemlandschaften.
+            </p>
+          </div>
+          <div class="text-card">
+            <h3>Wofür ich stehe</h3>
+            <ul class="list-clean">
+              <li>End-to-End-Blick statt isolierter Teiloptimierung</li>
+              <li>Operative Wirksamkeit statt abstrakter Konzeptarbeit</li>
+              <li>Transparenz über Abläufe, Engpässe und Verantwortlichkeiten</li>
+              <li>Saubere Trennung von physischer, dispositiver und systemischer Logik</li>
+              <li>Steuerbare Prozesse mit belastbaren KPIs und klarer Governance</li>
+              <li>Unabhängige Beratung statt Lösungsvertrieb</li>
+            </ul>
+          </div>
         </div>
-        <div class="text-card">
-          <h3>Wofür ich stehe</h3>
-          <ul class="list-clean">
-            <li>End-to-End-Blick statt isolierter Teiloptimierung</li>
-            <li>Operative Wirksamkeit statt abstrakter Konzeptarbeit</li>
-            <li>Transparenz über Abläufe, Engpässe und Verantwortlichkeiten</li>
-            <li>Saubere Trennung von physischer, dispositiver und systemischer Logik</li>
-            <li>Steuerbare Prozesse mit belastbaren KPIs und klarer Governance</li>
-            <li>Unabhängige Beratung statt Lösungsvertrieb</li>
-          </ul>
-        </div>
-      </div>
       </div>
     </section>
 
     <section id="kontakt">
       <h2>Kontakt</h2>
       <p class="section-intro">
-        Für eine erste Einordnung Ihres Anliegens reicht eine kurze Nachricht. Ich melde mich zeitnah zurück.
+        Für eine erste Kontaktaufnahme genügt eine kurze Nachricht mit Ihrem Namen, Unternehmen, Ihren Kontaktdaten und einer kurzen Beschreibung Ihres Anliegens.
       </p>
-
       <div class="contact-wrap">
         <div class="contact-box">
           <h3>Anfrage per E-Mail</h3>
@@ -557,14 +517,9 @@
       </p>
 
       <p>
-        </p>
-
-      <p>
         <strong>Verantwortlich für den Inhalt</strong><br />
         Ulrich Schnöckel
       </p>
-
-      
     </div>
   </section>
 
@@ -575,5 +530,6 @@
         <a href="#kontakt">Kontakt</a> · <a href="#impressum">Impressum</a>
       </div>
     </div>
-  </footer></body>
+  </footer>
+</body>
 </html>
