@@ -210,6 +210,43 @@
       color: var(--text-light);
     }
 
+    .text-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .text-card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.12rem;
+    }
+
+    .text-card p {
+      margin: 0;
+      color: var(--text-light);
+    }
+
+    .section-panel {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 34px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .tasks-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .tasks-grid .text-card:last-child {
+      grid-column: 1 / -1;
+    }
+
     .split {
       display: grid;
       grid-template-columns: 1.05fr 0.95fr;
@@ -292,8 +329,17 @@
       .hero-inner,
       .grid-3,
       .split,
-      .contact-wrap {
+      .contact-wrap,
+      .tasks-grid {
         grid-template-columns: 1fr;
+      }
+
+      .tasks-grid .text-card:last-child {
+        grid-column: auto;
+      }
+
+      .section-panel {
+        padding: 26px;
       }
     }
   </style>
@@ -354,7 +400,7 @@
       </p>
       <div class="grid-3">
         <div class="card">
-          <img class="card-image" src="443381d1-5f72-4fea-8681-3c65f6a13f35.jpeg" alt="Goldbarren und Edelmetalle" />
+          <img class="card-image" src="AdobeStock_56178036.jpeg" alt="Gold- und Silbermünzen" />
           <div class="card-body">
           <h3>Edelmetalle</h3>
           <p>
@@ -390,32 +436,36 @@
     </section>
 
     <section id="aufgaben">
-      <h2>Typische Aufgabenstellungen</h2>
-      <p class="section-intro">
-        Unterstützung dort, wo wertlogistische Prozesse operativ unter Druck stehen, Schnittstellen unsauber sind
-        oder Steuerung und Transparenz nicht mit dem tatsächlichen Prozessgeschehen Schritt halten.
-      </p>
-      <div class="grid-3">
-        <div class="card">
-          <h3>Walk-the-Process</h3>
-          <p>
-            Analyse der tatsächlichen Abläufe entlang von Ankauf, Prüfung, Bearbeitung, Lager, Versand und Fulfillment –
-            nicht aus dem Organigramm, sondern aus dem realen Prozess heraus.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Quick Wins & Stabilisierung</h3>
-          <p>
-            Identifikation kurzfristig wirksamer Maßnahmen im laufenden Betrieb, um Engpässe, Medienbrüche,
-            unnötige Schleifen und operative Reibungsverluste gezielt zu reduzieren.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Steuerung & Kapazität</h3>
-          <p>
-            Aufbau tragfähiger KPI-, Kapazitäts- und Steuerungslogiken für Volumensteuerung, Priorisierung,
-            Peak-Szenarien und belastbare operative Entscheidungen.
-          </p>
+      <div class="section-panel">
+        <h2>Typische Aufgabenstellungen</h2>
+        <p class="section-intro">
+          Unterstützung dort, wo wertlogistische Prozesse operativ unter Druck stehen, Schnittstellen unsauber sind
+          oder Steuerung und Transparenz nicht mit dem tatsächlichen Prozessgeschehen Schritt halten.
+        </p>
+        <div class="tasks-grid">
+          <div class="text-card">
+            <h3>Walk-the-Process</h3>
+            <p>
+              Analyse der tatsächlichen Abläufe entlang von Ankauf, Prüfung, Bearbeitung, Lager, Versand und Fulfillment –
+              nicht aus dem Organigramm, sondern aus dem realen Prozess heraus.
+            </p>
+          </div>
+          <div class="text-card">
+            <h3>Quick Wins &amp; Stabilisierung</h3>
+            <p>
+              Identifikation kurzfristig wirksamer Maßnahmen im laufenden Betrieb, um Engpässe, Medienbrüche,
+              unnötige Schleifen und operative Reibungsverluste gezielt zu reduzieren.
+            </p>
+          </div>
+          <div class="text-card">
+            <h3>Steuerung &amp; Kapazität</h3>
+            <p>
+              Aufbau tragfähiger KPI-, Kapazitäts- und Steuerungslogiken für Volumensteuerung, Priorisierung,
+              Peak-Sze<section id="profil">
+      <div class="section-panel">
+      <div class="split">
+        <div>/p>
+          </div>
         </div>
       </div>
     </section>
@@ -435,7 +485,7 @@
             in der Praxis die entscheidenden Risiken, Verzögerungen und Steuerungsdefizite.
           </p>
         </div>
-        <div class="card">
+        <div class="text-card">
           <h3>Wofür ich stehe</h3>
           <ul class="list-clean">
             <li>End-to-End-Blick statt isolierter Teiloptimierung</li>
@@ -445,6 +495,7 @@
             <li>Klarheit bei Verantwortlichkeiten, Kontrollen, KPIs und Steuerungsgrößen</li>
           </ul>
         </div>
+      </div>
       </div>
     </section>
 
