@@ -1,10 +1,1217 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <title>404</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ulrich Schnöckel | Edelmetalle, Sorten, Wertlogistik, Product Owner & Prozessmanagement</title>
+  <meta name="description" content="Ulrich Schnöckel ist Bankbetriebswirt und Spezialist für Edelmetallhandel, Sorten, Wertlogistik, Banking Operations, physische Bestände, ERP-/Handelssysteme und IT-nahe Prozessgestaltung. Offen für passende Fach-, Product-Owner-, PMO-, Prozess- und Operations-Rollen." />
+  <meta name="keywords" content="Ulrich Schnöckel, Bankbetriebswirt, Edelmetallhandel, Sortenhandel, Wertlogistik, Cash Center, Cash Center Operations, physische Werte, Edelmetalle, Edelmetallprozesse, physische Bestände, Bestand, Bestandsführung, Backoffice, Banking Operations, ERP Prozessmanagement, Handelssysteme, Product Owner, PMO, Prozessmanager, Projektmanager, Operations Manager, Fachreferent Edelmetalle, Referent Edelmetalle, Prozessgestaltung" />
+  <meta property="og:title" content="Ulrich Schnöckel | Edelmetalle, Sorten, Wertlogistik & Prozessgestaltung" />
+  <meta property="og:description" content="Spezialist für physische Werte: Edelmetallhandel, Sorten, Wertlogistik, Banking Operations, Bestandsführung, ERP-/Handelssysteme und IT-nahe Prozessgestaltung." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:locale" content="de_DE" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Ulrich Schnöckel",
+      "jobTitle": "Bankbetriebswirt und Spezialist für Edelmetallhandel, Sorten, Wertlogistik und Prozessgestaltung",
+      "description": "Schnittstelle von Edelmetallhandel, Sorten, wertkritischen Beständen, Wertlogistik, Banking Operations, Backoffice, ERP-/Handelssystemen und IT-naher Prozessgestaltung.",
+      "knowsAbout": [
+        "Edelmetallhandel",
+        "Sortenhandel",
+        "Wertlogistik",
+        "Cash Center Operations",
+        "Banking Operations",
+        "Bestandsführung",
+        "ERP Prozessmanagement",
+        "Handelssysteme",
+        "Backoffice Prozesse",
+        "Product Ownership",
+        "PMO",
+        "Operations Management",
+        "Prozessmanagement"
+      ],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Bankbetriebswirt"
+      },
+      "email": "mailto:kontakt@schnoeckel.de"
+    }
+  }
+  </script>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --bg-deep: #070b16;
+      --bg-soft: #111827;
+      --card: #ffffff;
+      --card-soft: #f8fafc;
+      --text: #111827;
+      --text-light: #475569;
+      --muted: #94a3b8;
+      --line: #e5e7eb;
+      --accent: #b88a44;
+      --accent-soft: #f3e7d3;
+      --accent-dark: #7a5522;
+      --white: #ffffff;
+      --shadow: 0 24px 80px rgba(15, 23, 42, 0.22);
+      --radius: 26px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: #f8fafc;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 78% 18%, rgba(184, 138, 68, 0.22), transparent 34%),
+        radial-gradient(circle at 16% 74%, rgba(59, 130, 246, 0.10), transparent 32%),
+        linear-gradient(135deg, var(--bg-deep) 0%, var(--bg) 48%, #111827 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 58px 58px;
+      mask-image: linear-gradient(to bottom, black, transparent 88%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -140px;
+      top: 140px;
+      width: 520px;
+      height: 520px;
+      border-radius: 50%;
+      border: 1px solid rgba(184, 138, 68, 0.24);
+      box-shadow: inset 0 0 80px rgba(184, 138, 68, 0.08);
+      pointer-events: none;
+    }
+
+    .container {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 28px 0;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,0.20);
+      border-radius: 14px;
+      background: rgba(255,255,255,0.06);
+      color: var(--accent-soft);
+      font-weight: 800;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
+    }
+
+    nav {
+      display: flex;
+      gap: 28px;
+      align-items: center;
+      color: rgba(255,255,255,0.78);
+      font-size: 0.94rem;
+    }
+
+    nav a:hover {
+      color: var(--white);
+    }
+
+    .nav-cta {
+      padding: 10px 16px;
+      border: 1px solid rgba(255,255,255,0.22);
+      border-radius: 999px;
+      color: var(--white);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      gap: 58px;
+      align-items: center;
+      padding: 72px 0 96px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 13px;
+      border: 1px solid rgba(184, 138, 68, 0.34);
+      border-radius: 999px;
+      color: #f8e7c4;
+      background: rgba(184, 138, 68, 0.10);
+      font-size: 0.88rem;
+      margin-bottom: 26px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 6px rgba(184, 138, 68, 0.16);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(3rem, 6.4vw, 6.3rem);
+      line-height: 0.96;
+      letter-spacing: -0.065em;
+      max-width: 900px;
+    }
+
+    .hero h1 span {
+      color: #eacb93;
+    }
+
+    .lead {
+      margin: 28px 0 0;
+      max-width: 760px;
+      color: rgba(255,255,255,0.78);
+      font-size: clamp(1.08rem, 1.8vw, 1.34rem);
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 38px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: linear-gradient(135deg, #c99954, var(--accent));
+      color: #111827;
+      box-shadow: 0 18px 42px rgba(184, 138, 68, 0.28);
+    }
+
+    .button-secondary {
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .signal-card {
+      position: relative;
+      padding: 28px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.16);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06)),
+        rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 32px 90px rgba(0,0,0,0.28);
+    }
+
+    .signal-visual {
+      min-height: 360px;
+      border-radius: 22px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(234, 203, 147, 0.28), transparent 24%),
+        linear-gradient(160deg, rgba(184, 138, 68, 0.18), rgba(15, 23, 42, 0.2)),
+        #0b1220;
+      position: relative;
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .signal-visual::before {
+      content: "";
+      position: absolute;
+      inset: 46px 32px;
+      border-radius: 26px;
+      border: 1px solid rgba(234, 203, 147, 0.22);
+      transform: rotate(-7deg);
+    }
+
+    .signal-visual::after {
+      content: "Handel · Bestand · Logistik · IT";
+      position: absolute;
+      left: 26px;
+      right: 26px;
+      bottom: 26px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(7, 11, 22, 0.74);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: rgba(255,255,255,0.78);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+    }
+
+    .signal-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .signal-item {
+      padding: 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,0.07);
+      color: rgba(255,255,255,0.80);
+      font-size: 0.92rem;
+    }
+
+    .strip {
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .strip-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .strip-item {
+      padding: 28px;
+      background: #ffffff;
+    }
+
+    .strip-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+      font-size: 1.02rem;
+    }
+
+    .strip-item span {
+      color: var(--text-light);
+      font-size: 0.94rem;
+    }
+
+    section {
+      padding: 96px 0;
+    }
+
+    .section-kicker {
+      margin: 0 0 14px;
+      color: var(--accent-dark);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-size: 0.76rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.9rem);
+      line-height: 1.05;
+      letter-spacing: -0.045em;
+      color: var(--text);
+    }
+
+    .section-intro {
+      margin: 22px 0 0;
+      max-width: 840px;
+      color: var(--text-light);
+      font-size: 1.14rem;
+      line-height: 1.8;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 58px;
+      align-items: start;
+    }
+
+    .quote-card {
+      position: sticky;
+      top: 24px;
+      padding: 34px;
+      border-radius: var(--radius);
+      background: var(--bg);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .quote-card p {
+      margin: 0;
+      font-size: 1.5rem;
+      line-height: 1.35;
+      letter-spacing: -0.025em;
+    }
+
+    .quote-card .small {
+      margin-top: 22px;
+      color: rgba(255,255,255,0.62);
+      font-size: 0.98rem;
+      line-height: 1.7;
+    }
+
+    .content-block {
+      display: grid;
+      gap: 18px;
+    }
+
+    .text-card {
+      padding: 30px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 48px rgba(15, 23, 42, 0.06);
+    }
+
+    .text-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.28rem;
+      letter-spacing: -0.02em;
+    }
+
+    .text-card p {
+      margin: 0;
+      color: var(--text-light);
+    }
+
+    .dark-section {
+      color: var(--white);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(184, 138, 68, 0.18), transparent 28%),
+        linear-gradient(135deg, #080d18, #111827 60%, #0f172a);
+    }
+
+    .dark-section h2,
+    .dark-section .section-kicker {
+      color: var(--white);
+    }
+
+    .dark-section .section-kicker {
+      color: #eacb93;
+    }
+
+    .dark-section .section-intro {
+      color: rgba(255,255,255,0.72);
+    }
+
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 46px;
+    }
+
+    .domain-card {
+      min-height: 240px;
+      padding: 28px;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      box-shadow: 0 18px 48px rgba(0,0,0,0.16);
+    }
+
+    .domain-number {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 22px;
+      border-radius: 14px;
+      color: #f8e7c4;
+      background: rgba(184, 138, 68, 0.16);
+      border: 1px solid rgba(184, 138, 68, 0.24);
+      font-weight: 800;
+    }
+
+    .domain-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.28rem;
+      letter-spacing: -0.02em;
+    }
+
+    .domain-card p {
+      margin: 0;
+      color: rgba(255,255,255,0.70);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 26px;
+      margin-top: 46px;
+    }
+
+    .profile-card {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 48px rgba(15, 23, 42, 0.06);
+    }
+
+    .profile-card h3 {
+      margin: 0 0 12px;
+      font-size: 1.38rem;
+      letter-spacing: -0.03em;
+    }
+
+    .profile-card p {
+      margin: 0;
+      color: var(--text-light);
+    }
+
+    .timeline {
+      margin-top: 48px;
+      border-left: 1px solid var(--line);
+      padding-left: 30px;
+      display: grid;
+      gap: 24px;
+    }
+
+    .timeline-item {
+      position: relative;
+      padding: 26px;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 44px rgba(15, 23, 42, 0.05);
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: -38px;
+      top: 34px;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 7px var(--accent-soft);
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 8px;
+      font-size: 1.18rem;
+    }
+
+    .timeline-item p {
+      margin: 0;
+      color: var(--text-light);
+    }
+
+    .statement {
+      padding: 78px;
+      border-radius: 34px;
+      color: var(--white);
+      background:
+        linear-gradient(135deg, rgba(184, 138, 68, 0.22), rgba(255,255,255,0.03)),
+        var(--bg);
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .statement::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      right: -110px;
+      bottom: -150px;
+      border-radius: 50%;
+      border: 1px solid rgba(234, 203, 147, 0.22);
+    }
+
+    .statement h2 {
+      color: var(--white);
+      max-width: 890px;
+    }
+
+    .statement p {
+      max-width: 760px;
+      margin: 24px 0 0;
+      color: rgba(255,255,255,0.74);
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+
+    .recruiter-section {
+      background: #f8fafc;
+    }
+
+    .recruiter-panel {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 34px;
+      align-items: start;
+      margin-top: 46px;
+    }
+
+    .search-profile {
+      padding: 34px;
+      border-radius: var(--radius);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 16px 48px rgba(15, 23, 42, 0.06);
+    }
+
+    .search-profile h3 {
+      margin: 0 0 14px;
+      font-size: 1.38rem;
+      letter-spacing: -0.03em;
+    }
+
+    .search-profile p {
+      margin: 0 0 22px;
+      color: var(--text-light);
+    }
+
+    .tag-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .tag-cloud span {
+      display: inline-flex;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    .role-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .role-item {
+      padding: 22px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.05);
+    }
+
+    .role-item strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--text);
+    }
+
+    .role-item span {
+      color: var(--text-light);
+    }
+
+    .contact {
+      background: #ffffff;
+    }
+
+    .contact-card {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 42px;
+      align-items: center;
+      padding: 48px;
+      border-radius: 34px;
+      border: 1px solid var(--line);
+      background: var(--card-soft);
+      box-shadow: 0 18px 56px rgba(15, 23, 42, 0.08);
+    }
+
+    .contact-card p {
+      color: var(--text-light);
+      font-size: 1.08rem;
+    }
+
+    .contact-box {
+      padding: 28px;
+      border-radius: 24px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+    }
+
+    .contact-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      color: var(--text-light);
+    }
+
+    .contact-line:last-child {
+      border-bottom: none;
+    }
+
+    .contact-line strong {
+      color: var(--text);
+    }
+
+    footer {
+      padding: 30px 0;
+      background: #ffffff;
+      border-top: 1px solid var(--line);
+      color: var(--text-light);
+      font-size: 0.92rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 980px) {
+      nav {
+        display: none;
+      }
+
+      .recruiter-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid,
+      .two-col,
+      .contact-card {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        padding-top: 48px;
+      }
+
+      .signal-card {
+        max-width: 620px;
+      }
+
+      .strip-grid,
+      .domain-grid,
+      .profile-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .quote-card {
+        position: relative;
+        top: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(var(--max), calc(100% - 28px));
+      }
+
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-grid {
+        gap: 34px;
+        padding-bottom: 62px;
+      }
+
+      .lead {
+        font-size: 1rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .strip-grid,
+      .domain-grid,
+      .profile-grid,
+      .signal-list {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 70px 0;
+      }
+
+      .statement,
+      .contact-card {
+        padding: 30px;
+      }
+
+      .timeline {
+        padding-left: 22px;
+      }
+
+      .timeline-item::before {
+        left: -30px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>404 – Seite nicht erreichbar</h1>
+  <div class="page">
+    <section class="hero" id="start">
+      <div class="container">
+        <header>
+          <a class="brand" href="#start" aria-label="Zur Startseite">
+            <span class="brand-mark">US</span>
+            <span>Ulrich Schnöckel</span>
+          </a>
+          <nav aria-label="Hauptnavigation">
+            <a href="#profil">Profil</a>
+            <a href="#zielrollen">Zielrollen</a>
+            <a href="#domaene">Domäne</a>
+            <a href="#erfahrung">Erfahrung</a>
+            <a href="#suchprofil">Suchprofil</a>
+            <a href="#kontakt" class="nav-cta">Kontakt</a>
+          </nav>
+        </header>
+
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Offen für passende Rollen · Fachbereich · Prozesse · Systeme</div>
+            <h1>Spezialist für Edelmetalle, Sorten & <span>wertkritische Prozesse</span>.</h1>
+            <p class="lead">
+              Ich arbeite an der Schnittstelle von Handel, Backoffice, Wertlogistik, Bestand und IT – dort, wo physische Werte sicher bewegt, bewertet, gebucht, kontrolliert und systemseitig geführt werden müssen. Relevant für Fach-, Product-Owner-, PMO-, Prozessmanagement- und Operations-Rollen in Unternehmen mit physischen Wertbeständen.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#kontakt">Kontakt wegen passender Rolle</a>
+              <a class="button button-secondary" href="#zielrollen">Zielrollen ansehen</a>
+            </div>
+          </div>
+
+          <aside class="signal-card" aria-label="Thematische Übersicht">
+            <div class="signal-visual"></div>
+            <div class="signal-list">
+              <div class="signal-item">Saubere Bestände</div>
+              <div class="signal-item">Stabile Abwicklung</div>
+              <div class="signal-item">IT-nahe Prozesslogik</div>
+              <div class="signal-item">Operative Kontrolle</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="container">
+        <div class="strip-grid">
+          <div class="strip-item">
+            <strong>Handel</strong>
+            <span>fachliche Markt- und Produktlogik verstehen</span>
+          </div>
+          <div class="strip-item">
+            <strong>Bestand</strong>
+            <span>Werte kontrollfähig und nachvollziehbar führen</span>
+          </div>
+          <div class="strip-item">
+            <strong>Logistik</strong>
+            <span>physische Bewegung sicher operationalisieren</span>
+          </div>
+          <div class="strip-item">
+            <strong>Systeme</strong>
+            <span>Anforderungen in belastbare Prozesse übersetzen</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="zielrollen">
+      <div class="container">
+        <p class="section-kicker">Einstellungsprofil</p>
+        <h2>Wofür man mich einstellen sollte.</h2>
+        <p class="section-intro">
+          Ich suche keine beliebige Position. Interessant sind Rollen, in denen physische Werte, operative Prozesse, Fachkonzeption, Systemlogik und Verantwortung zusammenkommen.
+        </p>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <h3>Product Owner / Fachkonzeption</h3>
+            <p>
+              Für Edelmetall-, Sorten-, Ankauf-, Handels-, Bestands-, Backoffice- oder Logistikprozesse, bei denen Fachbereich und IT sauber verbunden werden müssen.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>Prozessmanager / Projektmanager / PMO</h3>
+            <p>
+              Für Migrationen, Systemeinführungen, Prozessaufbau, Berechtigungskonzepte, Kontrollfähigkeit, Stammdaten, Bestandslogik und operative Stabilisierung.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>Operations / Leitung / Schnittstellenrolle</h3>
+            <p>
+              Für Bereiche rund um Cash Center, Wertlogistik, Backoffice, physische Bestände, Abwicklung, Filial-/Partnerprozesse und operative Steuerung.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>Referent / Fachspezialist Edelmetalle</h3>
+            <p>
+              Für Unternehmen, Verbände oder Finanzdienstleister, die Branchenthemen fachlich belastbar aufbereiten, koordinieren und gegenüber Stakeholdern anschlussfähig machen müssen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="profil">
+      <div class="container two-col">
+        <aside class="quote-card">
+          <p>
+            Fachlichkeit, Prozessverständnis und operative Umsetzbarkeit gehören zusammen.
+          </p>
+          <div class="small">
+            Mein Fokus liegt auf der belastbaren Organisation physischer Wertströme: fachlich, operativ, kontrollfähig und systemnah.
+          </div>
+        </aside>
+
+        <div class="content-block">
+          <p class="section-kicker">Profil</p>
+          <h2>Eine Nische, in der Fachlichkeit und Systemlogik zusammenkommen müssen.</h2>
+          <p class="section-intro">
+            Physische Werte sind anspruchsvoll, weil sie gleichzeitig Handelsware, Bestand, Risiko, Logistikobjekt und Buchungsgegenstand sind. Genau an dieser Schnittstelle liegt meine Stärke.
+          </p>
+
+          <div class="text-card">
+            <h3>Schnittstellenkompetenz statt Silodenken</h3>
+            <p>
+              Ich verbinde die Perspektiven von Handel, Backoffice, operativer Abwicklung, Bestand, Logistik, Steuerung und IT. Dadurch entstehen Anforderungen, die fachlich korrekt und technisch umsetzbar sind.
+            </p>
+          </div>
+
+          <div class="text-card">
+            <h3>Erfahrung mit wertkritischen Prozessen</h3>
+            <p>
+              Edelmetalle, Sorten und bargeldnahe Prozessketten verzeihen keine Unschärfe. Bestände, Preislogik, Vier-Augen-Prinzipien, Transportwege, Schnittstellen und Kontrollpunkte müssen sauber zusammenspielen.
+            </p>
+          </div>
+
+          <div class="text-card">
+            <h3>Operative Tiefe mit Blick für Weiterentwicklung</h3>
+            <p>
+              Ich denke Prozesse nicht nur auf Folien, sondern aus der operativen Realität heraus: Was muss funktionieren? Wo entstehen Brüche? Welche Systemlogik verhindert Fehler, Doppelarbeit und Kontrollverlust?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section" id="domaene">
+      <div class="container">
+        <p class="section-kicker">Domäne</p>
+        <h2>Physische Werte brauchen mehr als Vertrieb.</h2>
+        <p class="section-intro">
+          Hinter jedem Geschäft mit physischen Werten steht eine Prozesskette: Preisstellung, Auftrag, Bestand, Reservierung, Kommissionierung, Transport, Buchung, Kontrolle, Abrechnung und Reporting. Mein Schwerpunkt liegt genau dort.
+        </p>
+
+        <div class="domain-grid">
+          <div class="domain-card">
+            <div class="domain-number">01</div>
+            <h3>Edelmetalle & Sorten</h3>
+            <p>
+              Produktlogik, Bewertung, Stückelungen, Handelsprozesse, Filial- und Partnerstrukturen sowie Besonderheiten physischer Ware.
+            </p>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-number">02</div>
+            <h3>Bestand & Kontrolle</h3>
+            <p>
+              Nachvollziehbare Bestandsführung, Soll-Ist-Abgleiche, Kassen- und Lagerprozesse, Differenzklärung und revisionsfähige Steuerung.
+            </p>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-number">03</div>
+            <h3>Wertlogistik</h3>
+            <p>
+              Sichere physische Bewegung, Versand- und Transportlogik, Verpackung, Übergaben, Nachweise und operative Belastbarkeit.
+            </p>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-number">04</div>
+            <h3>Backoffice & Abwicklung</h3>
+            <p>
+              Auftragsbearbeitung, Zahlungs- und Buchungslogik, Abstimmungen, Freigaben, Kontrollpunkte und saubere Prozessverantwortung.
+            </p>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-number">05</div>
+            <h3>ERP & Handelssysteme</h3>
+            <p>
+              Übersetzung fachlicher Anforderungen in Systemlogik, Tests, Stammdaten, Schnittstellen, Migrationen und produktive Abläufe.
+            </p>
+          </div>
+
+          <div class="domain-card">
+            <div class="domain-number">06</div>
+            <h3>Governance & Risiko</h3>
+            <p>
+              Vier-Augen-Prinzip, Berechtigungskonzepte, KYC-/AML-nahe Prozesspunkte, Kontrollfähigkeit und angemessene Funktionstrennung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <p class="section-kicker">Was mich unterscheidet</p>
+        <h2>Ich bewege mich nicht nur in einem Fachbereich, sondern zwischen den relevanten Welten.</h2>
+        <p class="section-intro">
+          Als Bankbetriebswirt verbinde ich Bankbetrieb, Edelmetall- und Sortenprozesse, IT-nahe Anforderungsarbeit, Beratung, ERP-Prozessgestaltung und operative Unternehmensverantwortung.
+        </p>
+
+        <div class="profile-grid">
+          <div class="profile-card">
+            <h3>Fachbereich verstehen</h3>
+            <p>
+              Handels- und Abwicklungslogiken, Bestandsfragen, Filial- und Partnerprozesse sowie reale operative Anforderungen sind für mich keine abstrakten Begriffe.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>IT anschlussfähig formulieren</h3>
+            <p>
+              Anforderungen müssen so beschrieben werden, dass Entwickler, Fachbereiche und Entscheider dasselbe Zielbild vor Augen haben.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>Prozesse stabilisieren</h3>
+            <p>
+              Ich suche nicht die elegante Präsentation, sondern den belastbaren Ablauf: weniger Brüche, weniger Unklarheit, mehr Kontrolle.
+            </p>
+          </div>
+          <div class="profile-card">
+            <h3>Verantwortung übernehmen</h3>
+            <p>
+              Physische Werte brauchen klare Zuständigkeiten. Ich arbeite strukturiert, prüfe kritisch und denke Entscheidungen bis in die Umsetzung hinein.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="erfahrung">
+      <div class="container">
+        <p class="section-kicker">Erfahrung als Beleg</p>
+        <h2>Der rote Faden: wertkritische Prozesse verstehen, ordnen und systemfähig machen.</h2>
+        <p class="section-intro">
+          Die Stationen sind nicht als klassischer Lebenslauf gedacht, sondern als Beleg für die Verbindung aus Praxis, Prozessdenken und Systemnähe.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3>Bankbetrieb, Sorten und Edelmetalle</h3>
+            <p>
+              Erfahrung in banknahen Prozessen rund um physische Werte, Bestände, Abwicklung, Cash-Center-nahe Fragestellungen, Qualitätssicherung und funktionale Anforderungen.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Prozessberatung und Systemumfeld</h3>
+            <p>
+              Arbeit an Prozessabbildung, Migrationen, Releases, Tests, ERP-/Handelssystemlogik und der Übersetzung fachlicher Anforderungen in produktive Systemabläufe.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>Unternehmerische Verantwortung</h3>
+            <p>
+              Operative Gesamtverantwortung, Prozessaufbau, Steuerung, Multichannel-Strukturen, kaufmännische Entscheidungen und pragmatische Umsetzung im Tagesgeschäft.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>ERP- und Prozessmanagement</h3>
+            <p>
+              Analyse, Strukturierung und Verbesserung von End-to-End-Prozessen mit Blick auf Systeme, Daten, Rollen, Abläufe und belastbare operative Umsetzung.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="statement">
+          <p class="section-kicker">Haltung</p>
+          <h2>Werte werden nicht dadurch sicher, dass man über sie spricht. Sondern dadurch, dass Prozesse, Systeme und Verantwortung stimmen.</h2>
+          <p>
+            Mein Anspruch ist, komplexe physische Wertströme so zu ordnen, dass sie fachlich korrekt, operativ robust und systemseitig beherrschbar werden. Dafür braucht es ein Verständnis für Handel, Bestand, Logistik, Backoffice, Kontrolle und IT-nahe Umsetzung.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="recruiter-section" id="suchprofil">
+      <div class="container">
+        <p class="section-kicker">Suchprofil</p>
+        <h2>Für Unternehmen, Recruiter, Headhunter und Entscheider in einer engen Nische.</h2>
+        <p class="section-intro">
+          Diese Seite ist bewusst kein klassischer Bewerbungslebenslauf. Sie soll schnell einordnen, für welche Suchen mein Profil relevant ist: dort, wo Edelmetalle, Sorten, Wertlogistik, physische Bestände, Prozessverantwortung, Systemlogik und operative Steuerung zusammenkommen.
+        </p>
+
+        <div class="recruiter-panel">
+          <div class="search-profile">
+            <h3>Relevante Suchbegriffe</h3>
+            <p>
+              Begriffe, unter denen mein Profil gefunden und fachlich richtig eingeordnet werden soll.
+            </p>
+            <div class="tag-cloud" aria-label="Relevante Suchbegriffe">
+              <span>Edelmetallhandel</span>
+              <span>Sortenhandel</span>
+              <span>Wertlogistik</span>
+              <span>Cash Center</span>
+              <span>Bankbetriebswirt</span>
+              <span>Banking Operations</span>
+              <span>Bestandsführung</span>
+              <span>Backoffice</span>
+              <span>ERP Prozessmanagement</span>
+              <span>Handelssysteme</span>
+              <span>Product Owner</span>
+              <span>Prozessgestaltung</span>
+              <span>Physische Werte</span>
+              <span>Operations Manager</span>
+              <span>Fachreferent Edelmetalle</span>
+              <span>Migration</span>
+              <span>Systemeinführung</span>
+            </div>
+          </div>
+
+          <div class="role-list">
+            <div class="role-item">
+              <strong>Rollen mit direktem fachlichem Bezug</strong>
+              <span>Product Owner, Prozessmanager, Projektmanager, PMO, Fachspezialist oder Schnittstellenrolle rund um Edelmetalle, Sorten, Cash Center, Wertlogistik und physische Bestände.</span>
+            </div>
+            <div class="role-item">
+              <strong>Rollen mit operativer Verantwortung</strong>
+              <span>Leitung, Steuerung oder Aufbau von Abwicklungs-, Bestands-, Logistik-, Backoffice- oder systemnahen Prozessbereichen.</span>
+            </div>
+            <div class="role-item">
+              <strong>Rollen mit Transformationsbezug</strong>
+              <span>Digitalisierung, Migration, Systemeinführung, Prozessstabilisierung, Fachkonzeption, Berechtigung, Kontrollfähigkeit und Governance in wertkritischen Umfeldern.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontakt">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <p class="section-kicker">Kontakt</p>
+            <h2>Kontakt für passende Positionen, vertrauliche Suchen und anspruchsvolle Prozessaufgaben.</h2>
+            <p>
+              Diese Seite richtet sich an Unternehmen, Personalberatungen und Entscheider, die physische Werte professionell organisieren, digitalisieren, stabilisieren oder weiterentwickeln wollen. Lebenslauf und Unterlagen stelle ich bei konkretem Interesse gerne zur Verfügung.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="mailto:kontakt@schnoeckel.de?subject=Anfrage%20zu%20passender%20Rolle%20im%20Umfeld%20physische%20Werte">E-Mail schreiben</a>
+              <a class="button button-secondary" style="color:#111827;border-color:#d1d5db;" href="#start">Nach oben</a>
+            </div>
+          </div>
+
+          <div class="contact-box">
+            <div class="contact-line">
+              <strong>Name</strong>
+              <span>Ulrich Schnöckel</span>
+            </div>
+            <div class="contact-line">
+              <strong>Qualifikation</strong>
+              <span>Bankbetriebswirt</span>
+            </div>
+            <div class="contact-line">
+              <strong>Fokus</strong>
+              <span>Edelmetalle · Sorten · physische Werte</span>
+            </div>
+            <div class="contact-line">
+              <strong>Zielrollen</strong>
+              <span>Product Owner · PMO · Prozess · Operations · Fachspezialist</span>
+            </div>
+            <div class="contact-line">
+              <strong>E-Mail</strong>
+              <span>kontakt@schnoeckel.de</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <span>© Ulrich Schnöckel</span>
+        <span>Physische Werte · Prozesse · Systeme · Verantwortung</span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
