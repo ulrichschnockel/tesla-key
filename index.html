@@ -264,39 +264,25 @@
 
     .signal-card {
       position: relative;
-      padding: 28px;
+      padding: 0;
       border-radius: var(--radius);
-      border: 1px solid rgba(255,255,255,0.16);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.06)),
-        rgba(15, 23, 42, 0.72);
-      backdrop-filter: blur(18px);
+      border: none;
+      background: transparent;
       box-shadow: 0 32px 90px rgba(0,0,0,0.28);
     }
 
     .signal-visual {
       min-height: 440px;
-      border-radius: 22px;
+      border-radius: var(--radius);
       overflow: hidden;
-      background:
-        linear-gradient(180deg, rgba(7, 11, 22, 0.10), rgba(7, 11, 22, 0.62)),
-        linear-gradient(90deg, rgba(7, 11, 22, 0.34), rgba(7, 11, 22, 0.06)),
-        url("./AdobeStock_55627450.jpeg") center center / cover no-repeat;
+      background: url("./AdobeStock_55627450.jpeg") center center / cover no-repeat;
       position: relative;
-      border: 1px solid rgba(255,255,255,0.10);
-      box-shadow: inset 0 0 90px rgba(7, 11, 22, 0.34);
+      border: none;
+      box-shadow: none;
     }
 
     .signal-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 20%, rgba(234, 203, 147, 0.14), transparent 30%),
-        linear-gradient(rgba(255,255,255,0.028) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.028) 1px, transparent 1px);
-      background-size: auto, 44px 44px, 44px 44px;
-      pointer-events: none;
+      content: none;
     }
 
 
