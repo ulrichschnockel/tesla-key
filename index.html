@@ -4,215 +4,72 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, follow" />
-
-  <title>404 | Seite nicht gefunden</title>
+  <title>Impressum</title>
 
   <style>
-    :root {
-      --bg: #0f172a;
-      --bg-deep: #070b16;
-      --text: #ffffff;
-      --muted: rgba(255,255,255,0.72);
-      --accent: #b88a44;
-      --accent-soft: #f3e7d3;
-      --line: rgba(255,255,255,0.16);
-      --radius: 26px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      min-height: 100vh;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 78% 18%, rgba(184, 138, 68, 0.22), transparent 34%),
-        radial-gradient(circle at 16% 74%, rgba(59, 130, 246, 0.10), transparent 32%),
-        linear-gradient(135deg, var(--bg-deep) 0%, var(--bg) 48%, #111827 100%);
-      display: grid;
-      place-items: center;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f7f7f7;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 60px auto;
       padding: 32px;
-    }
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
-      background-size: 58px 58px;
-      mask-image: linear-gradient(to bottom, black, transparent 88%);
-      pointer-events: none;
-    }
-
-    .card {
-      width: min(760px, 100%);
-      position: relative;
-      z-index: 1;
-      padding: clamp(34px, 6vw, 62px);
-      border-radius: var(--radius);
-      border: 1px solid var(--line);
-      background: rgba(15, 23, 42, 0.72);
-      box-shadow: 0 32px 90px rgba(0,0,0,0.28);
-      backdrop-filter: blur(18px);
-      text-align: left;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 42px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-    }
-
-    .brand-mark {
-      width: 42px;
-      height: 42px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(255,255,255,0.20);
-      border-radius: 14px;
-      background: rgba(255,255,255,0.06);
-      color: var(--accent-soft);
-      font-weight: 800;
-      box-shadow: 0 16px 40px rgba(0,0,0,0.18);
-    }
-
-    .kicker {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 13px;
-      border: 1px solid rgba(184, 138, 68, 0.34);
-      border-radius: 999px;
-      color: #f8e7c4;
-      background: rgba(184, 138, 68, 0.10);
-      font-size: 0.88rem;
-      margin-bottom: 24px;
-    }
-
-    .kicker::before {
-      content: "";
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 6px rgba(184, 138, 68, 0.16);
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(3rem, 8vw, 6rem);
-      line-height: 0.96;
-      letter-spacing: -0.065em;
+      margin-top: 0;
+      font-size: 28px;
     }
 
-    h1 span {
-      color: #eacb93;
+    h2 {
+      margin-top: 32px;
+      font-size: 20px;
     }
 
-    p {
-      margin: 24px 0 0;
-      max-width: 620px;
-      color: var(--muted);
-      font-size: clamp(1.05rem, 2vw, 1.25rem);
-      line-height: 1.7;
-    }
-
-    .actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 36px;
+    address {
+      font-style: normal;
     }
 
     a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 15px 22px;
-      border-radius: 999px;
-      font-weight: 700;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .button:hover {
-      transform: translateY(-2px);
-    }
-
-    .button-primary {
-      background: linear-gradient(135deg, #c99954, var(--accent));
-      color: #111827;
-      box-shadow: 0 18px 42px rgba(184, 138, 68, 0.28);
-    }
-
-    .button-secondary {
-      color: #ffffff;
-      border: 1px solid rgba(255,255,255,0.22);
-      background: rgba(255,255,255,0.05);
-    }
-
-    .footer-note {
-      margin-top: 46px;
-      color: rgba(255,255,255,0.48);
-      font-size: 0.92rem;
-    }
-
-    @media (max-width: 640px) {
-      body {
-        padding: 18px;
-      }
-
-      .card {
-        padding: 28px;
-      }
-
-      .actions {
-        flex-direction: column;
-      }
-
-      .button {
-        width: 100%;
-      }
+      color: #222;
     }
   </style>
 </head>
 
 <body>
-  <main class="card">
-    <div class="brand">
-      <span class="brand-mark">US</span>
-      <span>Ulrich Schnöckel</span>
-    </div>
+  <main>
+    <h1>Impressum</h1>
 
-    <div class="kicker">Fehler 404</div>
+    <p><strong>Angaben gemäß § 5 DDG</strong></p>
 
-    <h1>Seite <span>nicht gefunden</span>.</h1>
+    <address>
+      Ulrich Schnöckel<br />
+      Sandkuhle 9<br />
+      24799 Christiansholm<br />
+      Deutschland
+    </address>
 
+    <h2>Kontakt</h2>
     <p>
-      Die aufgerufene Seite ist nicht verfügbar oder wurde verschoben.
-      Bitte kehren Sie zur Startseite zurück.
+      E-Mail: <a href="mailto:kontakt@schnoeckel.de">kontakt@schnoeckel.de</a>
     </p>
 
-    <div class="actions">
-      <a class="button button-primary" href="../index.html">Zur Startseite</a>
-      <a class="button button-secondary" href="mailto:kontakt@schnoeckel.de">Kontakt aufnehmen</a>
-    </div>
+    <h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2>
 
-    <div class="footer-note">
-      Physische Werte · Prozesse · Systeme · Verantwortung
-    </div>
+    <address>
+      Ulrich Schnöckel<br />
+      Sandkuhle 9<br />
+      24799 Christiansholm<br />
+      Deutschland
+    </address>
   </main>
 </body>
 </html>
